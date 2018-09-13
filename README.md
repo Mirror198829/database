@@ -12,3 +12,5 @@ net stop mysql
 ### mysql可视化管理工具
 - windows：PHPMyAdmin\MYSQL_Front
 - Mac：PHPMyAdmin\Sequel Pro
+
+https://jingyan.baidu.com/article/1974b289515587f4b1f774d7.html
