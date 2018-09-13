@@ -9,3 +9,6 @@ net start mysql
 //停止服务
 net stop mysql
 ```
+### mysql可视化管理工具
+- windows：PHPMyAdmin\MYSQL_Front
+- Mac：PHPMyAdmin\Sequel Pro
