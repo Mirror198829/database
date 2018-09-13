@@ -15,3 +15,12 @@ net stop mysql
 - Mac：PHPMyAdmin\Sequel Pro  
 在windows下安装Navicat Premium
 
+# 数据类型
+## 整数
+|数据类型|数值范围|
+|---|---|
+|tinyint|-128~127|
+|smallint|-32768~32767|
+|mediumint|-8388608~8388607|
+|init|-2147483648~2147483647|
+|bigint|+-9.22*10的18次方 |
