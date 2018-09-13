@@ -65,5 +65,10 @@ net stop mysql
 * PARIMARY索引 标识行，不允许空值
 > 主键
 添加PARIMARY的列也称为主键  
+* 值唯一
+* 不允许NULL值  
+* 可以在创建表时定义，也可以在创建表之后定义  
+> auto_increment  
+
 
 ### 第三范式：属性不能依赖于主属性
