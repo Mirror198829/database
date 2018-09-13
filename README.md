@@ -37,3 +37,11 @@ net stop mysql
 |text|最多65535个字符|
 |mediumtext|最多2的24次方-1个字符|
 |longtext|最多2的32次方-1个字符|
+## 日期/时间
+|数据类型|含义|
+|---|---|
+|date|日期，格式:YYYY-MM-DD|
+|time|时间，格式：HH:MM:SS|
+|datetime|日期时间：YYYY-MM-DD HH:MM:SS|
+|timestamp|功能和datetime相同 但范围较小|
+|year|年份，格式：YYYY|
