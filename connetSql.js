@@ -1,19 +1,32 @@
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
+const mysql = require('mysql');
+const Mock = require('mockjs');
+
+//nodejs与mysql连接
+const connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'root',
   database : 'cjtest'
 }); 
 connection.connect();
-connection.query('SELECT * FROM userInfo', function (error, results, fields) {
+
+//批量删除数据
+let delSql = 'DELETE FROM userInfo';
+connection.query(delSql,(err,res)=>{
+  console.log(res)
+});
+
+// 批量插入数据
+let sql = "INSERT INTO userInfo (id,name,age,sex) VALUES ?"
+let tableData = Mock.mock({    //批量传入数据的规定格式
+  "data|200":[
+    ["@id","@cname","@natural(20, 35)","@cword(男女)"]
+  ]
+})
+connection.query(sql,[tableData.data], (err, results, fields) => {
    console.log('The solution is: ', results);
 });
-/* 
-  The solution is:  [ RowDataPacket { id: 1, name: 'caojing', age: 18, sex: '女' },
-  RowDataPacket { id: 2, name: '蒋鹏', age: 10, sex: '男' },
-  RowDataPacket { id: 3, name: 'xiaoqiang', age: 12, sex: '女' },
-  RowDataPacket { id: 4, name: 'xiaoxi', age: 12, sex: '男' },
-  RowDataPacket { id: 5, name: 'maozedong', age: 10, sex: '男' },
-  RowDataPacket { id: 6, name: 'xidada', age: 20, sex: '男' } ]
-*/
+// connection.query('SELECT * FROM userInfo', function (error, results, fields) {
+//    console.log('The solution is: ', results);
+// });
+
