@@ -69,7 +69,7 @@
 * SQL语句不区分大小写
 * 多条SQL需要分号分隔，单条SQL语句无需分号结束
 * 必须要给不允许NULL值且没有默认值的列提供值，否则插入不成功
-### 插入
+### 插入 INSERT INTO
 ``` javascript
 //插入单条数据
 INSERT INTO 表名 VALUES (值1，值2，值3……)
@@ -83,7 +83,7 @@ INSERT INTO userinfo(id,name,age,sex) VALUES ('333','333',20,'男');
 //插入多条数据
 INSERT INTO 表名(列1，列2，列3……)VALUES(值1，值2，值3……),(值1，值2，值3……),(值1，值2，值3……)
 ```
-### 查询
+### 查询 SELECT
 ``` javascript
 SELECT 列名 FROM 表名;
 //示例
@@ -95,4 +95,14 @@ SELECT name,age FROM userinfo;
 
 SELECT * FROM 表名;
 ```
-
+### 过滤数据 WHERE
+|操作符|说明|
+|---|---|
+|=|等于|
+|<>|不等于|
+|!=|不等于|
+|<|小于|
+|<=|小于等于|
+|>|大于|
+|>=|大于等于|
+|between|在指定的两个值之间|
