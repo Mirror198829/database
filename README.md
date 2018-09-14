@@ -123,3 +123,9 @@ SELECT * FROM userinfo WHERE name = '白洋' OR name = '冯强';
 SELECT * FROM userinfo WHERE name IN ('白洋','冯强'); //查询速度更快
 SELECT * FROM userinfo WHERE name NOT IN ('白洋','冯强');
 ```
+##### 通配符 like
+|通配符|说明|
+|---|---|
+|%|匹配任意字符，任意次数|
+| _ |总是匹配一个个字符|
+`SELECT * FROM userinfo WHERE name LIKE '%张%';`
