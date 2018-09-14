@@ -142,6 +142,7 @@ SELECT *,age+2 FROM userinfo  //查询结果增加一列‘age+2’
 `SELECT *,age+2 AS newAge FROM userinfo;`
 ### 汇总数据-聚集函数
 |函数|说明|
+|---|---|
 |Avg()|返回某列的平均数|
 |Count()|返回某列的行数|
 |Max()|返回某列的最大数|
