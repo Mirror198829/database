@@ -71,6 +71,15 @@
 * 必须要给不允许NULL值且没有默认值的列提供值，否则插入不成功
 ### 插入
 ``` javascript
+//插入单条数据
+INSERT INTO 表名 VALUES (值1，值2，值3……)
+//示例，不推荐
 INSERT INTO userinfo VALUES ('1','asdf',20,'女')
+
 INSERT INTO 表名(列1，列2，列3……) VALUES(值1，值2，值3……)
+//示例，推荐
+INSERT INTO userinfo(id,name,age,sex) VALUES ('333','333',20,'男');
+
+//插入多条数据
+INSERT INTO 表名(列1，列2，列3……)VALUES(值1，值2，值3……),(值1，值2，值3……),(值1，值2，值3……)
 ```
