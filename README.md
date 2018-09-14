@@ -83,3 +83,16 @@ INSERT INTO userinfo(id,name,age,sex) VALUES ('333','333',20,'男');
 //插入多条数据
 INSERT INTO 表名(列1，列2，列3……)VALUES(值1，值2，值3……),(值1，值2，值3……),(值1，值2，值3……)
 ```
+### 查询
+``` javascript
+SELECT 列名 FROM 表名;
+//示例
+SELECT name FROM userinfo;
+
+SELECT 列名1,列名2,列名3,……from 表名;
+//示例
+SELECT name,age FROM userinfo;
+
+SELECT * FROM 表名;
+```
+
