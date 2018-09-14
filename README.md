@@ -116,5 +116,9 @@ SELECT * FROM userinfo WHERE age BETWEEN 20 AND 25;
 |---|---|
 |AND|与|
 |OR|或|
-|IN|匹配，与OR相当|
+|IN|匹配，与OR相当,查询速度更快，如果可以用IN替代OR，就用IN|
 |NOT|非|
+``` javascript
+SELECT * FROM userinfo WHERE name = '白洋' OR name = '冯强';
+SELECT * FROM userinfo WHERE name IN ('白洋','冯强'); //查询速度更快
+```
