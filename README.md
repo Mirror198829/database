@@ -63,7 +63,7 @@
 ### 第三范式：属性不能依赖于主属性
 非主键列必须直接依赖于主键，不能存在传递依赖
 
-# sql语法
+# sql语句
 ### 插入
 ``` javascript
 INSERT INTO userinfo VALUES ('1','asdf',20,'女')
