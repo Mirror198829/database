@@ -154,5 +154,8 @@ SELECT AVG(age) AS '平均数' FROM userinfo //平均数：27.64
 SELECT MAX(age) AS '最大数' FROM userinfo //最大数：35
 SELECT MIN(age) AS '最小数' FROM userinfo //最小数：20
 SELECT SUM(age) AS '总数' FROM userinfo //总数：5529
-
 ```
+### 分组汇总 GROUP BY
+* 指示mysql分组数据，然后对每个组进行聚集
+* 必须出现在where 和 order by句之后
+* 除聚集计算语句外，select语句中的列都必须在group by子句给出
