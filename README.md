@@ -105,4 +105,8 @@ SELECT * FROM 表名;
 |<=|小于等于|
 |>|大于|
 |>=|大于等于|
-|between|在指定的两个值之间|
+|between 值 and 值|在指定的两个值之间|
+``` javascript
+SELECT * FROM userinfo WHERE `name`='龚涛';
+SELECT * FROM userinfo WHERE age BETWEEN 20 AND 25;
+```
