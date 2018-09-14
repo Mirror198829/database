@@ -157,5 +157,8 @@ SELECT SUM(age) AS '总数' FROM userinfo //总数：5529
 ```
 ### 分组汇总 GROUP BY
 * 指示mysql分组数据，然后对每个组进行聚集
-* 必须出现在where 和 order by句之后
+* 必须出现在where之后 和 order by句之前
 * 除聚集计算语句外，select语句中的列都必须在group by子句给出
+``` javascript
+SELECT age,COUNT(*) AS '男生个数' FROM userinfo WHERE sex = '男' GROUP BY age
+```
