@@ -148,3 +148,10 @@ SELECT *,age+2 FROM userinfo  //查询结果增加一列‘age+2’
 |Max()|返回某列的最大数|
 |Min()|返回某列的最小值|
 |Sum()|返回某列值之和|
+``` javascript
+SELECT AVG(age) AS '平均数' FROM userinfo //平均数：27.64
+SELECT MAX(age) AS '最大数' FROM userinfo //最大数：35
+SELECT MIN(age) AS '最小数' FROM userinfo //最小数：20
+SELECT SUM(age) AS '总数' FROM userinfo //总数：5529
+
+```
