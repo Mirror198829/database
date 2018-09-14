@@ -129,3 +129,9 @@ SELECT * FROM userinfo ORDER BY age
 SELECT * FROM userinfo ORDER BY age LIMIT 5
 SELECT * FROM userinfo ORDER BY age LIMIT 0,5
 ```
+### 计算字段
+|操作符|说明|
+|+|加法|
+|-|减法|
+|* |乘法|
+|/|除法|
