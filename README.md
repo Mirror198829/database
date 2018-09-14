@@ -136,5 +136,7 @@ SELECT * FROM userinfo ORDER BY age LIMIT 0,5
 |* |乘法|
 |/|除法|
 ``` javascript
-SELECT *,age+2 FROM userinfo  //增加一列‘age+2’
+SELECT *,age+2 FROM userinfo  //查询结果增加一列‘age+2’
 ```
+### 设置别名 AS
+`SELECT *,age+2 AS newAge FROM userinfo;`
