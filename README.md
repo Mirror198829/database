@@ -130,4 +130,10 @@ SELECT * FROM userinfo WHERE name NOT IN ('白洋','冯强');
 | _ |总是匹配一个个字符|  
 ``` javascript
 SELECT * FROM userinfo WHERE name LIKE '%张%';
-`
+```
+### 更新数据 UPDATE
+``` javascript
+//如果不写where子句，将会修改表中所有行
+UPDATE 表名 SET 列名1 = 值1 WHERE 子句
+UPDATE userinfo SET name = '曹静' WHERE `name`='张静'
+```
