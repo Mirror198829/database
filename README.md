@@ -127,5 +127,5 @@ SELECT * FROM userinfo WHERE name NOT IN ('白洋','冯强');
 |通配符|说明|
 |---|---|
 |%|匹配任意字符，任意次数|
-| _ |总是匹配一个个字符|
+| _ |总是匹配一个个字符|  
 `SELECT * FROM userinfo WHERE name LIKE '%张%';`
