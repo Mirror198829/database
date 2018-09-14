@@ -109,3 +109,11 @@ UPDATE userinfo SET name = '曹静' WHERE `name`='张静'
 DELETE FROM 表名 WHERE子句
 DELETE FROM userinfo WHERE NAME = '曹静'
 ```
+### 排序 ORDER BY
+* 默认升序(ASC)排序
+* 降序排序DESC
+* order by 列名1
+* order by 列名1,列名2
+* order by 列名1 DESC,列名2
+* order by 列名1 DESC,列名2 DESC
+* 如果有where子句，放在where子句之后
