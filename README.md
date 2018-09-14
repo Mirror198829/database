@@ -105,8 +105,16 @@ SELECT * FROM 表名;
 |<=|小于等于|
 |>|大于|
 |>=|大于等于|
+|is NULL|是否为空值|
 |between 值 and 值|在指定的两个值之间|
 ``` javascript
 SELECT * FROM userinfo WHERE `name`='龚涛';
 SELECT * FROM userinfo WHERE age BETWEEN 20 AND 25;
 ```
+##### 组合WHERE子句
+|操作符|说明|
+|---|---|
+|AND|与|
+|OR|或|
+|IN|匹配，与OR相当|
+|NOT|非|
