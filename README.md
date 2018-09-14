@@ -121,4 +121,5 @@ SELECT * FROM userinfo WHERE age BETWEEN 20 AND 25;
 ``` javascript
 SELECT * FROM userinfo WHERE name = '白洋' OR name = '冯强';
 SELECT * FROM userinfo WHERE name IN ('白洋','冯强'); //查询速度更快
+SELECT * FROM userinfo WHERE name NOT IN ('白洋','冯强');
 ```
