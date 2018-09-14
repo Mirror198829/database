@@ -117,3 +117,15 @@ DELETE FROM userinfo WHERE NAME = '曹静'
 * order by 列名1 DESC,列名2
 * order by 列名1 DESC,列名2 DESC
 * 如果有where子句，放在where子句之后
+``` javascript
+SELECT * FROM userinfo ORDER BY age
+```
+### 限制数 LIMIT
+* 放在WHERE 和 ORDER BY后面
+* LIMIT 5  取前5个
+* 第一行为0，不是1
+* limit 1,1 取从第2行开始1行
+``` javascript
+SELECT * FROM userinfo ORDER BY age LIMIT 5
+SELECT * FROM userinfo ORDER BY age LIMIT 0,5
+```
