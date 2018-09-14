@@ -137,3 +137,9 @@ SELECT * FROM userinfo WHERE name LIKE '%张%';
 UPDATE 表名 SET 列名1 = 值1 WHERE 子句
 UPDATE userinfo SET name = '曹静' WHERE `name`='张静'
 ```
+### 删除数据 DELETE
+``` javascript
+//不写WHERE将删除所有数据
+DELETE FROM 表名 WHERE子句
+DELETE FROM userinfo WHERE NAME = '曹静'
+```
