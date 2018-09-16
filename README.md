@@ -168,4 +168,5 @@ SELECT age,COUNT(*) AS '男生个数' FROM userinfo WHERE sex = '男' GROUP BY a
 * 必须出现在group by之后
 ``` javascript
 SELECT age,COUNT(*) FROM userinfo GROUP BY age HAVING COUNT(*) < 10 ORDER BY age DESC
+SELECT age,COUNT(*) AS totalCount FROM userinfo GROUP BY age HAVING totalCount < 10 ORDER BY age DESC
 ```
