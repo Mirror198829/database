@@ -166,3 +166,6 @@ SELECT age,COUNT(*) AS '男生个数' FROM userinfo WHERE sex = '男' GROUP BY a
 * WHERE过滤指定的是行而不是分组
 * having支持所有where操作符号
 * 必须出现在group by之后
+``` javascript
+SELECT age,COUNT(*) FROM userinfo GROUP BY age HAVING COUNT(*) < 10 ORDER BY age DESC
+```
