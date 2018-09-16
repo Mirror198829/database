@@ -162,3 +162,7 @@ SELECT SUM(age) AS '总数' FROM userinfo //总数：5529
 ``` javascript
 SELECT age,COUNT(*) AS '男生个数' FROM userinfo WHERE sex = '男' GROUP BY age
 ```
+##### 分组数据过滤 HAVING
+* WHERE过滤指定的是行而不是分组
+* having支持所有where操作符号
+* 必须出现在group by之后
