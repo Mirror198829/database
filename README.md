@@ -180,10 +180,14 @@ SELECT age,COUNT(*) AS totalCount FROM userinfo GROUP BY age HAVING totalCount <
 |having|组级过滤|否|
 |order by|排序|否|
 |limit|限制检索的行|否|
- #### 连表查询-联结
+ ### 连表查询-联结
  * 在一条select语句中关联表
  * 联结多个表返回一组输出
  * 不要忘记where子句
  ``` javascript
  SELECT userinfo.name,school.`name`,school.degree FROM `userinfo`,`school` WHERE userinfo.studyId = school.id
  ```
+ #### join
+ * 如果表中有至少一个匹配，则返回行
+ * 连结条件用特定的on子句而不是where子句
+ * inner join 和 join是相同的
