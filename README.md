@@ -180,4 +180,7 @@ SELECT age,COUNT(*) AS totalCount FROM userinfo GROUP BY age HAVING totalCount <
 |having|组级过滤|否|
 |order by|排序|否|
 |limit|限制检索的行|否|
-
+ #### 连表查询-联结
+ * 在一条select语句中关联表
+ * 联结多个表返回一组输出
+ * 不要忘记where子句
