@@ -184,3 +184,6 @@ SELECT age,COUNT(*) AS totalCount FROM userinfo GROUP BY age HAVING totalCount <
  * 在一条select语句中关联表
  * 联结多个表返回一组输出
  * 不要忘记where子句
+ ``` javascript
+ SELECT userinfo.name,school.`name`,school.degree FROM `userinfo`,`school` WHERE userinfo.studyId = school.id
+ ```
