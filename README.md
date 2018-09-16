@@ -187,7 +187,10 @@ SELECT age,COUNT(*) AS totalCount FROM userinfo GROUP BY age HAVING totalCount <
  ``` javascript
  SELECT userinfo.name,school.`name`,school.degree FROM `userinfo`,`school` WHERE userinfo.studyId = school.id
  ```
- #### join
+ #### join(推荐)
  * 如果表中有至少一个匹配，则返回行
  * 连结条件用特定的on子句而不是where子句
  * inner join 和 join是相同的
+ ``` javascript
+ SELECT userinfo.name,school.`name`,school.degree FROM `userinfo` JOIN school on userinfo.studyId = school.id
+ ```
