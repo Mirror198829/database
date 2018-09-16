@@ -170,3 +170,14 @@ SELECT age,COUNT(*) AS '男生个数' FROM userinfo WHERE sex = '男' GROUP BY a
 SELECT age,COUNT(*) FROM userinfo GROUP BY age HAVING COUNT(*) < 10 ORDER BY age DESC
 SELECT age,COUNT(*) AS totalCount FROM userinfo GROUP BY age HAVING totalCount < 10 ORDER BY age DESC
 ```
+## SELECT子句顺序
+|子句|说明|是否必须使用|
+|---|---|---|
+|select|返回数据|是|
+|from|从中检索数据的表|从表中选择数据时使用|
+|where|行级过滤|否|
+|group by|分组|仅在按组计算聚集时使用|
+|having|组级过滤|否|
+|order by|排序|否|
+|limit|限制检索的行|否|
+
