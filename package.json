@@ -1,0 +1,52 @@
+{
+  "name": "sql",
+  "version": "1.0.0",
+  "description": "|数据类型|数值范围|\r |---|---|\r |tinyint|-128~127|\r |smallint|-32768~32767|\r |mediumint|-8388608~8388607|\r |init|-2147483648~2147483647|\r |bigint|+-9.22*10的18次方 |\r ## default默认值\r * 必须是常量\r ## unsigned\r 定义无符号的数值，对应的取值范围翻倍，只能存储正数，不能存储负数\r ## 字符串\r |数据类型|含义|\r |---|---|\r |char|最多255个字符|\r |varchar|最多65532个字符|\r |tinytext|最多255个字符|\r |text|最多65535个字符|\r |mediumtext|最多2的24次方-1个字符|\r |longtext|最多2的32次方-1个字符|\r ## 日期/时间\r |数据类型|含义|\r |---|---|\r |date|日期，格式:YYYY-MM-DD|\r |time|时间，格式：HH:MM:SS|\r |datetime|日期时间：YYYY-MM-DD HH:MM:SS|\r |timestamp|功能和datetime相同 但范围较小|\r |year|年份，格式：YYYY|",
+  "main": "connetSql.js",
+  "dependencies": {
+    "_core-util-is@1.0.2@core-util-is": "^1.0.2",
+    "_bignumber.js@4.1.0@bignumber.js": "^4.1.0",
+    "_isarray@1.0.0@isarray": "^1.0.0",
+    "_inherits@2.0.3@inherits": "^2.0.3",
+    "_mockjs@1.0.1-beta3@mockjs": "^1.0.1-beta3",
+    "_mysql@2.16.0@mysql": "^2.16.0",
+    "_readable-stream@2.3.6@readable-stream": "^2.3.6",
+    "_process-nextick-args@2.0.0@process-nextick-args": "^2.0.0",
+    "_safe-buffer@5.1.2@safe-buffer": "^5.1.2",
+    "_sqlstring@2.3.1@sqlstring": "^2.3.1",
+    "_util-deprecate@1.0.2@util-deprecate": "^1.0.2",
+    "bignumber.js": "^4.1.0",
+    "core-util-is": "^1.0.2",
+    "inherits": "^2.0.3",
+    "isarray": "^1.0.0",
+    "mockjs": "^1.0.1-beta3",
+    "mysql": "^2.16.0",
+    "process-nextick-args": "^2.0.0",
+    "readable-stream": "^2.3.6",
+    "safe-buffer": "^5.1.2",
+    "sqlstring": "^2.3.1",
+    "util-deprecate": "^1.0.2",
+    "_string_decoder@1.1.1@string_decoder": "^1.1.1",
+    "string_decoder": "^1.1.1",
+    "_commander@2.18.0@commander": "^2.18.0",
+    "commander": "^2.18.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "mockjs": "^1.0.1-beta3",
+    "mysql": "^2.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mirror198829/sql.git"
+  },
+  "author": "caojing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mirror198829/sql/issues"
+  },
+  "homepage": "https://github.com/Mirror198829/sql#readme"
+}
